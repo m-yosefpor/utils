@@ -25,3 +25,11 @@ func ListDifference(a, b []string) []string {
 	}
 	return diff
 }
+
+// IsErrorMessage check two error if two errors have the same err.Error() and avoiding nil pointer derefrence issue.
+func IsErrorMessage(err, target error) bool {
+	if target == nil || err == nil {
+		return err == target
+	}
+	return err.Error() == target.Error()
+}
