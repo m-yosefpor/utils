@@ -2,13 +2,12 @@ package utils
 
 // isIn checks if a string array contains an element
 func IsIn(s string, list []string) bool {
-	is := false
 	for _, l := range list {
 		if s == l {
-			is = true
+			return true
 		}
 	}
-	return is
+	return false
 }
 
 // difference returns the elements in `a` that aren't in `b`.
