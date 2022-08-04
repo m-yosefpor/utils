@@ -1,3 +1,3 @@
 module github.com/m-yosefpor/utils
 
-go 1.16
+go 1.18
